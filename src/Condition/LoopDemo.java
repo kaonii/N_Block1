@@ -1,3 +1,5 @@
+package Condition;
+
 public class LoopDemo {
     public static void main(String[] args) {
 
@@ -29,6 +31,7 @@ public class LoopDemo {
             }
             counter2++;
         }
+
 
         /* write a while loop which displays all number between 1 and 5 000
          * which are divisible by 3 5 7

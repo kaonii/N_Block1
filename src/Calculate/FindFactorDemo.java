@@ -1,3 +1,5 @@
+package Calculate;
+
 public class FindFactorDemo {
     public static void main(String[] args) {
 

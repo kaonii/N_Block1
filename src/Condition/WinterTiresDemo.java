@@ -1,3 +1,5 @@
+package Condition;
+
 public class WinterTiresDemo {
     public static void main(String[] args) {
 

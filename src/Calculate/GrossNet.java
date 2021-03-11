@@ -1,3 +1,5 @@
+package Calculate;
+
 public class GrossNet {
     public static void main(String[] args) {
         float netPrice = 120;

@@ -1,4 +1,4 @@
-public class PrimeDemo {
+public class PrimeDemoFor {
 
          /*
         1. write a program and a method ("isPrime"), which checks whether a number is prime of not, and gives result to caller
@@ -14,7 +14,7 @@ public class PrimeDemo {
 
 
         int checkNumbers = 2;
-        while (checkNumbers <= 1234){
+        while (checkNumbers <= 1234) {
             if (isPrime(checkNumbers)) {
                 System.out.print(checkNumbers + ", ");
             }
@@ -33,24 +33,12 @@ public class PrimeDemo {
     }
 
 
-    // more elegant version, you can get rid of boolean value checkIsPrime
-
     public static boolean isPrime(int number) {
-        int checkValue = 2;
-//        boolean checkIsPrim = true;
-        while (checkValue < Math.sqrt(number)) {
+        for (int checkValue = 2; checkValue < number / 2; checkValue++)
 
-            if (number % checkValue == 0){
-                // Ups, es keine Primzahl, da es irgendeinen Teiler gibt
-                //              checkIsPrim = false;
-                // Abbrechen, da alles was jetzt noch kommt, hat keine Relevanz
-                //break;
+            if (number % checkValue == 0) {
                 return false;
             }
-            checkValue++;
-        }
-
-        //return checkIsPrim;
         return true;
     }
 

@@ -1,3 +1,5 @@
+package A;
+
 import java.util.Locale;
 
 public class StringDemo {

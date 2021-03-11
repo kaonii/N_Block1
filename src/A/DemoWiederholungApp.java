@@ -1,3 +1,5 @@
+package A;
+
 public class DemoWiederholungApp {
 
     // public static => hinnehmen
@@ -55,9 +57,9 @@ public class DemoWiederholungApp {
         number = number / 10; // number = 0
         System.out.println("ziffersumme = " + ziffersumme);
 
-        System.out.println("berechneZiffernsumme(987) = " + berechneZiffernsumme(987));
-        System.out.println("berechneZiffernsumme(543) = " + berechneZiffernsumme(543));
-        System.out.println("berechneZiffernsumme(532) = " + berechneZiffernsumme(532));
+        System.out.println("berechneZiffernsumme(987) = " + calcDigitSum(987));
+        System.out.println("berechneZiffernsumme(543) = " + calcDigitSum(543));
+        System.out.println("berechneZiffernsumme(532) = " + calcDigitSum(532));
 
     }
     // public static
@@ -72,15 +74,14 @@ public class DemoWiederholungApp {
         single purpose
      */
 
-    public static int berechneZiffernsumme(int value) { // Method signature
-        int ziffersumme = 0;
-        ziffersumme = ziffersumme + (value % 10); // 0 + 7 = 7
-        value = value / 10; // number = 98
-        ziffersumme = ziffersumme + (value % 10); // 7 + 8 = 15
-        value = value / 10; // number = 9
-        ziffersumme = ziffersumme + (value % 10); // 15 + 9 = 24
-        value = value / 10; // number = 0
+    public static int calcDigitSum(int value) {
+        int digitSum = 0;
 
-        return ziffersumme;
+        while (value > 0) {
+            digitSum = digitSum + (value % 10);
+            value = value / 10;
+        }
+
+        return digitSum;
     }
 }

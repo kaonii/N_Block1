@@ -1,3 +1,5 @@
+package Condition;
+
 public class NotenDemo {
     public static void main(String[] args) {
 

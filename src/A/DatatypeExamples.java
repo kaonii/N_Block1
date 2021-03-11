@@ -1,3 +1,5 @@
+package A;
+
 public class DatatypeExamples {
     public static void main(String[] args) {
         System.out.println("A few examples of data types:");

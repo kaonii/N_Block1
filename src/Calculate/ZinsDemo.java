@@ -1,3 +1,5 @@
+package Calculate;
+
 public class ZinsDemo {
     public static void main(String[] args) {
 
